@@ -1,7 +1,13 @@
 const mongoose = require("mongoose")
 
+require('dotenv').config();
+
+// const apiKey = process.env.MONGODB_STR
+// console.log(apiKey)
+
+
 // mongoose.connect("mongodb+srv://<SyedAhsan>:<ahsan123>@<users>/test?retryWrites=true&w=majority", {
-mongoose.connect("mongodb+srv://SyedAhsan:ahsan123@cluster0.0ua8hqy.mongodb.net/?retryWrites=true&w=majority", {
+mongoose.connect(process.env.MONGODB_STR, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     // useCreateIndex: true

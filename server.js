@@ -15,6 +15,9 @@ const corsOptions = {
 
 
 require("./src/db/conn");
+require('dotenv').config();
+
+
 
 // const static_path = path.join(__dirname, "./Paryatana-main");
 // const static_path = path.join(__dirname, "./Paryatana-main");
